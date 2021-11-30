@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['localhost', 'parallel-back.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'environ',
     'gunicorn',
     'bcrypt',
     'corsheaders',

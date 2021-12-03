@@ -8,9 +8,9 @@ class UserAccount(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(UserAccount, null=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=75)
-    image = models.CharField(max_length=1000)
-    status = models.CharField(max_length=100)
-    website = models.CharField(max_length=1000)
+    image = models.CharField(max_length=1000, blank=True)
+    status = models.CharField(max_length=100, blank=True)
+    website = models.CharField(max_length=1000, blank=True)
 
 
 class Project(models.Model):

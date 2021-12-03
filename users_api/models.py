@@ -16,7 +16,7 @@ class Profile(models.Model):
 class Project(models.Model):
     profile = models.ForeignKey(Profile, null=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
-    image = models.CharField(max_length=1000)
-    about = models.CharField(max_length=1000)
-    link = models.CharField(max_length=1000)
-    github = models.CharField(max_length=1000)
+    image = models.CharField(max_length=1000, blank=True)
+    about = models.CharField(max_length=1000, blank=True)
+    link = models.CharField(max_length=1000, blank=True)
+    github = models.CharField(max_length=1000, blank=True)
